@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/tablet.css" />
+    <link rel="stylesheet" href="css/labtop.css" />
+    <link rel="stylesheet" href="css/desktop.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/tesla.js"></script>
+    <title>Tesla</title>
+  </head>
+  <body class="roboto-regular">
+    <header>
+      <div class="header_wrap">
+        <div class="header_center">
+          <div class="h1_wrap">
+            <h1><a href="#">Tesla</a></h1>
+          </div>
+          <nav>
+            <button type="button" class="close_btn">메뉴닫기</button>
+            <h2 class="screen_out">main-navigation</h2>
+            <div class="gnb_wrap">
+              <h3>메뉴</h3>
+              <ul class="gnb">
+                <li>
+                  <a href="#">모델</a>
+                </li>
+                <li>
+                  <a href="#">충전</a>
+                </li>
+                <li>
+                  <a href="#">시승</a>
+                </li>
+                <li>
+                  <a href="#">이벤트</a>
+                </li>
+                <li>
+                  <button type="button"></button>
+                  <a href="#">계정</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="header_btn">
+            <button type="button" class="m_account">로그인</button>
+            <button type="button" class="m_btn">메뉴열기</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="visual">
+        <div class="visual_wrap swiper visualSwiper">
+          <div class="visual_wrap_sli swiper-wrapper">
+            <div class="visual_text_img swiper-slide">
+              <div class="visual_img">
+                <div class="visual_text">
+                  <p>장거리 주행에 최적화된 디자인</p>
+                  <h2>Model 3</h2>
+                  <a href="#">자세히 보기 ></a>
+                </div>
+              </div>
+            </div>
+            <!-- model3 -->
+            <div class="visual_text_img swiper-slide">
+              <div class="visual_img">
+                <div class="visual_text">
+                  <p>가장 빠른 가속력을 자랑하는 차량</p>
+                  <h2>Model S</h2>
+                  <a href="#">자세히 보기 ></a>
+                </div>
+              </div>
+            </div>
+            <!-- modelS -->
+            <div class="visual_text_img swiper-slide">
+              <div class="visual_img">
+                <div class="visual_text">
+                  <p>압도적인 성능과 가속력을 자랑하는 SUV</p>
+                  <h2>Model X</h2>
+                  <a href="#">자세히 보기 ></a>
+                </div>
+              </div>
+            </div>
+            <!-- modelX -->
+            <div class="visual_text_img swiper-slide">
+              <div class="visual_img">
+                <div class="visual_text">
+                  <p>안전을 위한 설계</p>
+                  <h2>Model Y</h2>
+                  <a href="#">자세히 보기 ></a>
+                </div>
+              </div>
+            </div>
+            <!-- modelY -->
+            <div class="visual_text_img swiper-slide">
+              <div class="visual_img">
+                <div class="visual_text">
+                  <p>지구를 위한 디자인</p>
+                  <h2>CYBERTRUCK</h2>
+                  <a href="#">자세히 보기 ></a>
+                </div>
+              </div>
+            </div>
+            <!-- CyberTruck -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="models">
+        <div class="models_wrap">
+          <div class="models_text">
+            <h2>All Modles</h2>
+            <p>
+              지속 가능한 에너지로의 전 세계적<span>전환을 가속화합니다</span>
+            </p>
+          </div>
+          <div class="cars_wrap swiper carSwiper">
+            <div class="cars_box_wrap swiper-wrapper">
+              <div class="models_box swiper-slide">
+                <div class="spec_box">
+                  <div class="models_name">
+                    <h3>Model 3</h3>
+                  </div>
+                  <div class="models_img">
+                    <div class="cars_img"></div>
+                  </div>
+                  <ul class="models_spec">
+                    <li>
+                      <div class="models_left">주행가능거리</div>
+                      <div class="models_right">488 km</div>
+                    </li>
+                    <!-- 주행가능거리 -->
+                    <li>
+                      <div class="models_left">0-100km/h</div>
+                      <div class="models_right">4.4초</div>
+                    </li>
+                    <!-- 제로백 -->
+                    <li>
+                      <div class="models_left">최고속도</div>
+                      <div class="models_right">233km/h</div>
+                    </li>
+                    <!-- 최고속도 -->
+                    <li>
+                      <div class="models_left">최대출력</div>
+                      <div class="models_right">208kW</div>
+                    </li>
+                    <!-- 최대출력 -->
+                  </ul>
+                  <div class="line_box"></div>
+                  <div class="models_order">
+                    <div class="order_btn">
+                      <div class="order_test">
+                        <a href="#">시승 신청하기</a>
+                      </div>
+                      <div class="order_order">
+                        <a href="#">주문하기</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- model3 -->
+              <div class="models_box swiper-slide">
+                <div class="spec_box">
+                  <div class="models_name">
+                    <h3>Model S</h3>
+                  </div>
+                  <div class="models_img">
+                    <div class="cars_img models_S"></div>
+                  </div>
+                  <ul class="models_spec">
+                    <li>
+                      <div class="models_left">주행가능거리</div>
+                      <div class="models_right">474 km</div>
+                    </li>
+                    <!-- 주행가능거리 -->
+                    <li>
+                      <div class="models_left">0-100km/h</div>
+                      <div class="models_right">2.1초</div>
+                    </li>
+                    <!-- 제로백 -->
+                    <li>
+                      <div class="models_left">최고속도</div>
+                      <div class="models_right">322m/h</div>
+                    </li>
+                    <!-- 최고속도 -->
+                    <li>
+                      <div class="models_left">최대출력</div>
+                      <div class="models_right">1,020hp</div>
+                    </li>
+                    <!-- 최대출력 -->
+                  </ul>
+                  <div class="line_box"></div>
+                  <div class="models_order">
+                    <div class="order_btn">
+                      <div class="order_test">
+                        <a href="#">시승 신청하기</a>
+                      </div>
+                      <div class="order_order">
+                        <a href="#">주문하기</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- modelS -->
+              <div class="models_box swiper-slide">
+                <div class="spec_box">
+                  <div class="models_name">
+                    <h3>Model X</h3>
+                  </div>
+                  <div class="models_img">
+                    <div class="cars_img models_X"></div>
+                  </div>
+                  <ul class="models_spec">
+                    <li>
+                      <div class="models_left">주행가능거리</div>
+                      <div class="models_right">439 km</div>
+                    </li>
+                    <!-- 주행가능거리 -->
+                    <li>
+                      <div class="models_left">0-100km/h</div>
+                      <div class="models_right">2.6초</div>
+                    </li>
+                    <!-- 제로백 -->
+                    <li>
+                      <div class="models_left">최고속도</div>
+                      <div class="models_right">250km/h</div>
+                    </li>
+                    <!-- 최고속도 -->
+                    <li>
+                      <div class="models_left">최대출력</div>
+                      <div class="models_right">1,020hp</div>
+                    </li>
+                    <!-- 최대출력 -->
+                  </ul>
+                  <div class="line_box"></div>
+                  <div class="models_order">
+                    <div class="order_btn">
+                      <div class="order_test">
+                        <a href="#">시승 신청하기</a>
+                      </div>
+                      <div class="order_order">
+                        <a href="#">주문하기</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- modelX -->
+              <div class="models_box swiper-slide">
+                <div class="spec_box">
+                  <div class="models_name">
+                    <h3>Model Y</h3>
+                  </div>
+                  <div class="models_img">
+                    <div class="cars_img models_Y"></div>
+                  </div>
+                  <ul class="models_spec">
+                    <li>
+                      <div class="models_left">주행가능거리</div>
+                      <div class="models_right">468 km</div>
+                    </li>
+                    <!-- 주행가능거리 -->
+                    <li>
+                      <div class="models_left">0-100km/h</div>
+                      <div class="models_right">6.9초</div>
+                    </li>
+                    <!-- 제로백 -->
+                    <li>
+                      <div class="models_left">최고속도</div>
+                      <div class="models_right">217km/h</div>
+                    </li>
+                    <!-- 최고속도 -->
+                    <li>
+                      <div class="models_left">적재용량</div>
+                      <div class="models_right">2,100+</div>
+                    </li>
+                    <!-- 최대출력 -->
+                  </ul>
+                  <div class="line_box"></div>
+                  <div class="models_order">
+                    <div class="order_btn">
+                      <div class="order_test">
+                        <a href="#">시승 신청하기</a>
+                      </div>
+                      <div class="order_order">
+                        <a href="#">주문하기</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- modelY -->
+              <div class="models_box swiper-slide">
+                <div class="spec_box">
+                  <div class="models_name">
+                    <h3>CYBER TRUCK</h3>
+                  </div>
+                  <div class="models_img">
+                    <div class="cars_img cyber_Truck"></div>
+                  </div>
+                  <ul class="models_spec">
+                    <li>
+                      <div class="models_left">예상 주행 가능거리</div>
+                      <div class="models_right">547 km</div>
+                    </li>
+                    <!-- 주행가능거리 -->
+                    <li>
+                      <div class="models_left">0-100km/h</div>
+                      <div class="models_right">2.7초</div>
+                    </li>
+                    <!-- 제로백 -->
+                    <li>
+                      <div class="models_left">견인력</div>
+                      <div class="models_right">4,990KG</div>
+                    </li>
+                    <!-- 최고속도 -->
+                    <li></li>
+                  </ul>
+
+                  <div class="line_box line_cyber"></div>
+                  <div class="models_order">
+                    <div class="order_btn order_cyber">
+                      <div class="order_order cyber_a">
+                        <a href="#">자세히 보기</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- CYBER TRUCK -->
+              <div class="models_box swiper-slide">
+                <div class="spec_box logo_spec">
+                  <div class="models_img">
+                    <div class="cars_img tesla_box"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- TESLA LOGO -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="category">
+            <div class="category_wrap">
+              <a href="#" class="gory_test">
+                <div class="cate_icon">
+                  <div class="car_icon"></div>
+                  <div class="act car_icon"></div>
+                </div>
+                <div class="cate_text">
+                  <span>시승하기</span>
+                </div>
+                <p>자세히 보기</p>
+              </a>
+              <div class="right_line"></div>
+              <!-- 시승하기 아이콘 -->
+              <a href="#" class="gory_quote">
+                <div class="cate_icon">
+                  <div class="quote_icon"></div>
+                  <div class="act quote_icon"></div>
+                </div>
+                <div class="cate_text">
+                  <span>견적내기</span>
+                </div>
+                <p>자세히 보기</p>
+              </a>
+              <div class="right_line"></div>
+              <!-- 견적내기 아이콘 -->
+              <a href="#" class="gory_coun">
+                <div class="cate_icon">
+                  <div class="coun_icon"></div>
+                  <div class="act coun_icon"></div>
+                </div>
+                <div class="cate_text">
+                  <span>구매상담</span>
+                </div>
+                <p>자세히 보기</p>
+              </a>
+              <div class="right_line"></div>
+              <!-- 구매상담 아이콘 -->
+              <a href="#" class="gory_event">
+                <div class="cate_icon">
+                  <div class="event_icon"></div>
+                  <div class="act event_icon"></div>
+                </div>
+                <div class="cate_text">
+                  <span>이벤트</span>
+                </div>
+                <p>자세히 보기</p>
+              </a>
+              <!-- 이벤트 아이콘 -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="changing">
+        <div class="changing_wrap">
+          <div class="changing_text">
+            <h2>Changing <span>perception</span></h2>
+            <p>
+              Tesla는 태양광 에너지로 구동하고,<span
+                >배터리로 작동하며, 전기차로 운송하는 세상을 만들고
+                있습니다</span
+              >
+            </p>
+          </div>
+          <div class="changing_it">
+            <div class="changing_img_box animateTopb_box">
+              <div class="changing_img chsun"></div>
+              <div class="changing_img chbatt"></div>
+              <div class="changing_img cheleccar"></div>
+            </div>
+            <div class="changing_btn_wrap swiper btnSwiper">
+              <div class="changing_btn_box swiper-wrapper">
+                <button type="button" class="text_btn swiper-slide" id="sun">
+                  <div class="btn_title">태양광</div>
+                  <div class="btn_text">주거 및 상업용 태양광 에너지 생산</div>
+                </button>
+                <!-- 태양광 -->
+                <button type="button" class="text_btn swiper-slide" id="batt">
+                  <div class="btn_title">배터리</div>
+                  <div class="btn_text">
+                    청정 에너지 저장을 위한 배터리 설치
+                  </div>
+                </button>
+                <!-- 배터리 -->
+                <button
+                  type="button"
+                  class="text_btn swiper-slide"
+                  id="eleccar"
+                >
+                  <div class="btn_title">전기차량</div>
+                  <div class="btn_text">
+                    청정 에너지로 충전할 수 있는 배출 가스 제로 차량제조
+                  </div>
+                </button>
+                <!-- 배터리 -->
+              </div>
+            </div>
+          </div>
+          <div class="changing_sub">
+            <div class="eco">
+              <div class="eco_img"></div>
+              <div class="eco_text">
+                <div class="text_title">생태계 창출</div>
+                <p>
+                  Tesla는 에너지 및 운송에 걸맞는 완전 통합형 생태계를 설계하고
+                  창출합니다.
+                </p>
+                <a href="#">더 알아보기 ></a>
+              </div>
+            </div>
+            <!-- 생태계창출 -->
+            <div class="waste">
+              <div class="waste_img"></div>
+              <div class="waste_text">
+                <div class="text_title">용수 및 폐기물</div>
+                <p>Tesla는 제조 폐기물의 90%를 재활용 했습니다.</p>
+                <a href="#">더 알아보기 ></a>
+              </div>
+            </div>
+            <!-- 폐기물 -->
+            <div class="elec">
+              <div class="elec_img"></div>
+              <div class="elec_text">
+                <div class="text_title">전기차 효율성</div>
+                <p>Tesla는 가장 효율적인 도로 주행 차량을 생산합니다.</p>
+                <a href="#">더 알아보기 ></a>
+              </div>
+            </div>
+            <!-- 전기차 -->
+          </div>
+        </div>
+      </section>
+      <section class="latest">
+        <div class="latest_wrap">
+          <div class="latest_text">
+            <h2>Latest News</h2>
+            <p>
+              Tesla는 차량, 로봇 등의 분야에서 대규모의<span
+                >자율 주행 기술을 개발하고 배포합니다</span
+              >
+            </p>
+          </div>
+          <div class="detail_wrap swiper detailSwiper animateBtop_box">
+            <div class="detail_box swiper-wrapper">
+              <div class="detail_imtext swiper-slide">
+                <div class="detail_size">
+                  <div class="detail_img"></div>
+                  <div class="detail_text">
+                    <a href="#">
+                      <h4>풀 셀프 드라이빙 <span>구현 기능 칩</span></h4>
+                      <p>
+                        소형 아키텍처 및 마이크로 아키텍처 개선을 고려하여 풀
+                        셀프 드라이빙 소프트웨어를 실행하는 AI 추론 칩을
+                        개발합니다
+                      </p>
+                      <p>더 알아보기 ></p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- 1 -->
+              <div class="detail_imtext swiper-slide">
+                <div class="detail_size">
+                  <div class="detail_img bot_img"></div>
+                  <div class="detail_text">
+                    <a href="#">
+                      <h4>Tesla Bot</h4>
+                      <p>
+                        안전하지 않거나 반복적이거나 지루한 작업을 수행할 수
+                        있는 범용 이족 보행 휴머노이드 로봇을 개발합니다.
+                      </p>
+                      <p>더 알아보기</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="detail_imtext swiper-slide">
+                <div class="detail_size">
+                  <div class="detail_img dojo_img"></div>
+                  <div class="detail_text">
+                    <a href="#">
+                      <h4>Dojo 칩</h4>
+                      <p>
+                        가장 작은 훈련 노드에서부터 다중 다이 훈련 타일에
+                        이르기까지 최신 기술을 구현합니다. 모든 단위에서 최대
+                        성능, 처리량 및 대역폭을 위해 디자인하고 설계합니다.
+                      </p>
+                      <p>더 알아보기</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="detail_imtext swiper-slide">
+                <div class="detail_size">
+                  <div class="detail_img study_img"></div>
+                  <div class="detail_text">
+                    <a href="#">
+                      <h4>자율 학습 알고리즘</h4>
+                      <p>
+                        공간을 높은 정밀도로 표현하고 해당 공간에서 궤적을
+                        계획하여 차량을 주행하는 핵심 알고리즘을 개발합니다.
+                      </p>
+                      <p>더 알아보기</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="detail_imtext swiper-slide">
+                <div class="detail_size">
+                  <div class="detail_img infra_img"></div>
+                  <div class="detail_text">
+                    <a href="#">
+                      <h4>평가 인프라</h4>
+                      <p>
+                        개방 및 폐쇄형 루프 HIL(Hardware in-the-loop-in) 평가
+                        도구 및 인프라를 구축하여 혁신 속도를 가속화하고 성능
+                        향상도를 추적하며 회귀 현상을 방지합니다.
+                      </p>
+                      <p>더 알아보기</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- 5 -->
+            </div>
+            <div class="pager swiper-pagination"></div>
+            <div class="detail_awrap">
+              <a href="#" class="full" data-slide-index="0">
+                <div>풀 셀프 드라이빙<span>구현 기능 칩</span></div>
+              </a>
+              <!-- 풀 셀프 -->
+              <a href="#" class="bot" data-slide-index="1">
+                <div>Tesla Bot</div>
+              </a>
+              <!-- 봇 -->
+              <a href="#" class="dojo" data-slide-index="2">
+                <div>Dojo 칩</div>
+              </a>
+              <!-- dojo칩 -->
+              <a href="#" class="study" data-slide-index="3">
+                <div>자율 학습 알고리즘</div>
+              </a>
+              <!-- 자율 학습 알고리즘  -->
+              <a href="#" class="infra" data-slide-index="4">
+                <div>평가 인프라</div>
+              </a>
+              <!-- 풀 셀프 -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contents">
+        <div class="contents_wrap swiper contentSwiper">
+          <div class="contents_text">
+            <h4>Contents</h4>
+            <p>테슬라에서 진행중인 다양한 컨텐츠를 소개합니다</p>
+          </div>
+          <div class="contents_box swiper-wrapper animateTopb_box">
+            <div class="contents_event swiper-slide">
+              <div class="contents_img"></div>
+              <div class="contents_detail_text">
+                <h4>이벤트</h4>
+                <p>테슬라에서 진행중인 다양한 이벤트 정보를 전해드립니다</p>
+                <a href="#">자세히 보기</a>
+              </div>
+            </div>
+            <!-- 이벤트 -->
+            <div class="contents_cunstomer swiper-slide">
+              <div class="contents_img"></div>
+              <div class="contents_detail_text">
+                <h4>고객경험담</h4>
+                <p>테슬라에서 진행중인 다양한 이벤트 정보를 전해드립니다</p>
+                <a href="#">자세히 보기</a>
+              </div>
+            </div>
+            <!-- 고객경험담 -->
+            <div class="contents_charger swiper-slide">
+              <div class="contents_img"></div>
+              <div class="contents_detail_text">
+                <h4>슈퍼차저</h4>
+                <p>
+                  주요 경로에 위치한 수퍼차저를 이용해 차량을 충전할 수 있습니다
+                </p>
+                <a href="#">자세히 보기</a>
+              </div>
+            </div>
+            <!-- 이벤트 -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <footer>
+        <div class="footer_inner">
+          <div class="footer_wrap">
+            <div class="footer_top">
+              <div class="footer_logo"></div>
+              <div class="footer_line"></div>
+            </div>
+            <div class="leri_box">
+              <div class="footer_left">
+                <div class="left_box">
+                  <p>
+                    <span>테슬라코리아 유한회사 |</span>
+                    <span>사업자등록번호 : 524-88-00237 |</span>
+                    <span>데이비드존파인스타인, 케네스어니스트무어 |</span>
+                    <span>통신판매업신고: 제2016-서울강남-02964호 |</span>
+                    <span>호스팅제공자: Tesla Inc. |</span>
+                    <span>주소 : 서울특별시 강남구 테헤란로 134, 14층 |</span>
+                    <span>대표전화 : 080-617-1388 | southkorea@tesla.com</span>
+                  </p>
+                  <p>Tesla © 2024 All rights reserved</p>
+                </div>
+              </div>
+              <div class="footer_right">
+                <div class="right_box">
+                  <div class="tesla_news">
+                    <p>최신 Tesla의 최신 소식을 먼저 받아보세요</p>
+                    <a href="#">구독하기</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
