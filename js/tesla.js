@@ -216,19 +216,19 @@ $(function () {
 });
 
 $(document).ready(function () {
-  var ww = $(window).width();
   var mySwiper = undefined;
 
   function initSwiper() {
+    var ww = window.innerWidth;
     if (ww < 768 && mySwiper == undefined) {
       mySwiper = new Swiper(".contentSwiper", {
         pagination: {
           el: ".swiper-pagination",
         },
-        loop: true,
+        loop: false,
       });
     } else if (ww >= 768 && mySwiper != undefined) {
-      mySwiper.destroy();
+      mySwiper.destroy(true, true);
       mySwiper = undefined;
     }
   }
@@ -236,7 +236,6 @@ $(document).ready(function () {
   initSwiper();
 
   $(window).on("resize", function () {
-    ww = $(window).width();
     initSwiper();
   });
 });

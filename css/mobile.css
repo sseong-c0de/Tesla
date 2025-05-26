@@ -103,7 +103,7 @@ nav > button {
 }
 .visual_img {
   width: 100%;
-  height: 800px;
+  height: 500px;
   background: url(../img/mode33.png) no-repeat center/cover;
 }
 .visual_text_img:nth-of-type(2) .visual_img {
@@ -117,7 +117,7 @@ nav > button {
   background: url(../img/big_car/modely.png) no-repeat center/cover;
 }
 .visual_text_img:nth-of-type(5) .visual_img {
-  background: url(../img/big_car/64138_157846_3443.jpg) no-repeat center/cover;
+  background: url(../img/big_car/64138_157846_3443.png) no-repeat center/cover;
 }
 .visual_text {
   position: absolute;

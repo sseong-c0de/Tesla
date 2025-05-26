@@ -122,10 +122,10 @@ nav>button{
 }
 .visual_img{
   width: 100%;;
-  height: 1080px;
+  height: 800px;
   background: url(../img/mode33.png)no-repeat center/cover;
-  
 }
+
 .visual_text{
   position: absolute;
   bottom: 125px;

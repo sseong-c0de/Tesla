@@ -132,7 +132,7 @@
   }
   .visual_img {
     width: 100%;
-    height: 1080px;
+    height:650px;
     background: url(../img/mode33.png) no-repeat center/cover;
   }
   .visual_text {
@@ -638,6 +638,7 @@
   .contents_charger {
     display: block;
   }
+
   footer {
     background: #f2f2f2;
     margin-top: 100px;
