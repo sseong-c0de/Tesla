@@ -277,7 +277,17 @@ $(function () {
     }
   });
 });
-
+// $(function () {
+//   if (window.width() >= 768) {
+//   } else {
+//     $("h1 a").css({
+//       "background-image": "url(../img/logo/tmlogowithe.png)",
+//       "background-repeat": "no-repeat",
+//       "background-position": "center",
+//       "background-size": "contain",
+//     });
+//   }
+// });
 $(function () {
   $("header").mouseenter(function () {
     $(this).css({
@@ -286,6 +296,9 @@ $(function () {
     $(".m_btn").attr("class", "m_btn_act");
     $(".m_account").attr("class", "m_account_act");
     $(".gnb > li > a").attr("id", "colwh");
+    if ($(window).width() >= 768) {
+      $("h1 > a").attr("class", "logoAct");
+    }
   });
 });
 $(function () {
@@ -296,6 +309,9 @@ $(function () {
     $(".m_btn_act").attr("class", "m_btn");
     $(".m_account_act").attr("class", "m_account");
     $(".gnb > li > a").attr("id", "");
+    if ($(window).width() >= 768) {
+      $("h1 > a").attr("class", "");
+    }
   });
 });
 
@@ -437,8 +453,8 @@ function carsBtopClass() {
 }
 function updateBtopClass() {
   if ($(window).width() >= 768) {
-    $(".eco,.elec,.waste").addClass("animateBtop_box");
     $(".eco,.elec,.waste").removeClass("animateLR_box animateRL_box");
+    $(".eco,.elec,.waste").addClass("animateBtop_box");
   }
 }
 
@@ -457,7 +473,7 @@ function textLRClass() {
   const transformAfterValue = isPC ? "translateX(-50%)" : "translateX(0px)";
 
   if ($(window).width() < 1700) {
-    $texts.addClass("animateLR_box");
+    $texts.removeClass("animateLR_box").addClass("animateLR_box");
     $(".animateLR_box").css({ transform: transformDefaultValue });
     $(".animateLR_box.visible").css({
       transform: transformAfterValue,
@@ -498,13 +514,16 @@ function scrollAni() {
   });
 }
 $(document).ready(function () {
+  updateBtopClass();
   textLRClass();
   updateRLClass();
   updateLRClass();
-  updateBtopClass();
   scrollAni();
   carsBtopClass();
 });
 $(window).on("scroll", scrollAni);
 $(window).on("load", scrollAni);
 $(window).on("resize", textLRClass);
+$(window).on("resize", function () {
+  updateBtopClass();
+});

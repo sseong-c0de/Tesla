@@ -1,8 +1,6 @@
 @charset "utf-8";
 @media screen and (min-width: 1700px) {
-  body {
-    /* background: skyblue; */
-  }
+
 
   header {
     /* display: block; */
@@ -303,17 +301,12 @@
   .order_cyber {
     margin: 0 auto;
   }
-  .order_test,
-  .order_cyber {
-    /* background-color: #2c2b3a; */
-  }
+
   .order_test > a,
   .order_cyber > a {
     color: #fff;
   }
-  /* .logo_re{
-  position: relative;
-} */
+
   .tesla_box {
     width: 80%;
     height: auto;
@@ -461,6 +454,7 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    position: relative;
   }
   .changing_sub a {
     font-size: 1.4rem;

@@ -1,8 +1,6 @@
 @charset "utf-8";
 @media screen and (min-width: 768px) {
-  body {
-    /* background: skyblue; */
-  }
+
 
   header {
     /* display: block; */
@@ -39,6 +37,10 @@
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
+  }
+  .logoAct{
+    background: url(../img/logo/tmlogoblack.png) no-repeat center/contain;
+
   }
   .header_btn {
     width: auto;
