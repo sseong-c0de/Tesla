@@ -587,7 +587,7 @@ nav > button {
   width: 83.33%;
 }
 .detail_wrap .swiper-pagination-horizontal {
-  bottom: -30px;
+  bottom: -20px;
   color: #000;
 }
 .detail_wrap .swiper-pagination {
@@ -706,6 +706,9 @@ footer {
   font-size: 1.6rem;
 }
 
+
+
+
 .animateBtop_box {
   opacity: 0;
   transform: translateY(50px);
@@ -714,18 +717,24 @@ footer {
 .animateTopb_box {
   opacity: 0;
   transform: translateY(-50px);
-  /* transition: all 0.8s ease 0.5s; */
+
 }
 .animateRL_box {
   opacity: 0;
   transform: translateX(50px);
-  /* transition: all 0.8s ease; */
+
 }
+
+
+
 .animateLR_box {
   opacity: 0;
   transform: translateX(-50px);
-  /* transition: all 0.8s ease; */
+
 }
+
+
+
 
 .animateRL_box.visible,
 .animateLR_box.visible {

@@ -439,13 +439,6 @@ $(function () {
   });
 });
 
-// function updateWaste() {
-//   if ($(window).width() < 768) {
-//     $(".waste").removeClass("animateLR_box").addClass("animateRL_box");
-//   } else {
-//     $(".waste").removeClass("animateRL_box").addClass("animateLR_box");
-//   }
-// }
 function carsBtopClass() {
   if ($(window).width() >= 360) {
     $(".cars_box_wrap").addClass("animateBtop_box");
@@ -464,6 +457,11 @@ function updateLRClass() {
     $(".eco,.elec").addClass("animateLR_box");
   }
 }
+function updateRLClass() {
+  if ($(window).width() < 768) {
+    $(".waste").addClass("animateRL_box");
+  }
+}
 function textLRClass() {
   const $texts = $(
     ".models_text, .changing_text, .latest_text, .contents_text"
@@ -472,26 +470,14 @@ function textLRClass() {
   const transformDefaultValue = isPC ? "translateX(-60%)" : "translateX(-50px)";
   const transformAfterValue = isPC ? "translateX(-50%)" : "translateX(0px)";
 
-  if ($(window).width() < 1700) {
-    $texts.removeClass("animateLR_box").addClass("animateLR_box");
-    $(".animateLR_box").css({ transform: transformDefaultValue });
-    $(".animateLR_box.visible").css({
-      transform: transformAfterValue,
-      transition: "all 0s",
-    });
-  } else {
-    $texts.addClass("animateLR_box");
-    $(".animateLR_box").css({ transform: transformDefaultValue });
-    $(".animateLR_box.visible").css({
-      transform: transformAfterValue,
-      transition: "all 0s",
-    });
-  }
-}
-function updateRLClass() {
-  if ($(window).width() < 768) {
-    $(".waste").addClass("animateRL_box");
-  }
+  $texts.addClass("animateLR_box");
+
+  $texts.css({ transform: transformDefaultValue });
+
+  $texts.filter(".visible").css({
+    transform: transformAfterValue,
+    transition: "all 0s",
+  });
 }
 
 function scrollAni() {
@@ -501,15 +487,19 @@ function scrollAni() {
     var boxTop = $(this).offset().top;
     var scrollTop = $(window).scrollTop();
     var windowHeight = $(window).height();
-    // 화면 아래에서 80% 지점에서부터 등장시킴
+
     if (scrollTop + windowHeight > boxTop + 100) {
       const isPC = $(window).width() >= 1700;
 
-      const transformAfterValue = isPC ? "translateX(-50%)" : "translateX(0px)";
       $(this).addClass("visible");
-      $(".animateLR_box.visible").css({
-        transform: transformAfterValue,
-      });
+
+      // 여기서 this가 animateLR_box일 경우에만 transform 적용
+      if ($(this).hasClass("animateLR_box")) {
+        const transformAfterValue = isPC
+          ? "translateX(-50%)"
+          : "translateX(0px)";
+        $(this).css({ transform: transformAfterValue });
+      }
     }
   });
 }
