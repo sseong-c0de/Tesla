@@ -277,17 +277,7 @@ $(function () {
     }
   });
 });
-// $(function () {
-//   if (window.width() >= 768) {
-//   } else {
-//     $("h1 a").css({
-//       "background-image": "url(../img/logo/tmlogowithe.png)",
-//       "background-repeat": "no-repeat",
-//       "background-position": "center",
-//       "background-size": "contain",
-//     });
-//   }
-// });
+
 $(function () {
   $("header").mouseenter(function () {
     $(this).css({
@@ -446,8 +436,11 @@ function carsBtopClass() {
 }
 function updateBtopClass() {
   if ($(window).width() >= 768) {
-    $(".eco,.elec,.waste").removeClass("animateLR_box animateRL_box");
-    $(".eco,.elec,.waste").addClass("animateBtop_box");
+    $(".eco,.elec,.waste")
+      .removeClass("animateLR_box animateRL_box")
+      .addClass("animateBtop_box");
+  } else {
+    $(".eco,.elec,.waste").removeClass("animateBtop_Box");
   }
 }
 
@@ -455,11 +448,15 @@ function updateBtopClass() {
 function updateLRClass() {
   if ($(window).width() < 768) {
     $(".eco,.elec").addClass("animateLR_box");
+  } else {
+    $(".eco,.elec").removeClass("animateLR_box");
   }
 }
 function updateRLClass() {
   if ($(window).width() < 768) {
     $(".waste").addClass("animateRL_box");
+  } else {
+    $(".waste").removeClass("animateRL_box");
   }
 }
 function textLRClass() {
@@ -516,4 +513,8 @@ $(window).on("load", scrollAni);
 $(window).on("resize", textLRClass);
 $(window).on("resize", function () {
   updateBtopClass();
+  updateLRClass();
+  updateRLClass();
+  textLRClass();
+  scrollAni();
 });
