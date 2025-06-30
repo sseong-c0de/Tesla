@@ -310,13 +310,11 @@ $(function () {
     function () {
       $(this).css({
         background: "#5a6380",
-        transition: "background-color 0.2s",
       });
     },
     function () {
       $(this).css({
         background: "#2c2b3a",
-        transition: "background-color 0.2s ",
       });
     }
   );
@@ -344,13 +342,11 @@ $(function () {
     function () {
       $(this).css({
         background: "#2c2b3a",
-        transition: "background-color 0.2s",
       });
     },
     function () {
       $(this).css({
         background: "#fff",
-        transition: "background-color 0.2s ",
       });
     }
   );
@@ -361,13 +357,11 @@ $(function () {
     function () {
       $(this).css({
         color: "#fff",
-        transition: " 0.2s",
       });
     },
     function () {
       $(this).css({
         color: "#000",
-        transition: " 0.2s ",
       });
     }
   );

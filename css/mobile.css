@@ -100,7 +100,6 @@ nav > button {
 }
 .visual_wrap {
   width: 100%;
-
 }
 .visual_img {
   width: 100%;
@@ -118,12 +117,13 @@ nav > button {
   background: url(../img/big_car/modely.png) no-repeat center/cover;
 }
 .visual_text_img:nth-of-type(5) .visual_img {
-  background: url(../img/big_car/tesla_cybertruck_suv-wallpaper-1920x1080.jpg) no-repeat center/cover;
+  background: url(../img/big_car/tesla_cybertruck_suv-wallpaper-1920x1080.jpg)
+    no-repeat center/cover;
 }
 .visual_text {
   position: absolute;
   bottom: 60px;
-  color:#ffffff;
+  color: #ffffff;
   margin-left: 8.3333%;
 }
 .visual_text h2 {
@@ -159,7 +159,7 @@ nav > button {
   background-color: #fff;
 }
 .swiper-pagination-horizontal {
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
 .models {
   padding-top: 180px;
@@ -284,6 +284,7 @@ nav > button {
   text-align: center;
   line-height: 40px;
   position: relative;
+  transition: all 0.2s;
 }
 .order_test {
   background-color: #2c2b3a;
@@ -706,9 +707,6 @@ footer {
   font-size: 1.6rem;
 }
 
-
-
-
 .animateBtop_box {
   opacity: 0;
   transform: translateY(50px);
@@ -717,24 +715,16 @@ footer {
 .animateTopb_box {
   opacity: 0;
   transform: translateY(-50px);
-
 }
 .animateRL_box {
   opacity: 0;
   transform: translateX(50px);
-
 }
-
-
 
 .animateLR_box {
   opacity: 0;
   transform: translateX(-50px);
-
 }
-
-
-
 
 .animateRL_box.visible,
 .animateLR_box.visible {
