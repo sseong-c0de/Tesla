@@ -309,7 +309,7 @@ $(function () {
   $(".order_test").hover(
     function () {
       $(this).css({
-        background: "#E5E8FF",
+        background: "#5a6380",
         transition: "background-color 0.2s",
       });
     },
@@ -326,7 +326,7 @@ $(function () {
   $(".order_test>a").hover(
     function () {
       $(this).css({
-        color: "#000",
+        color: "#fff",
         transition: " 0.2s",
       });
     },
