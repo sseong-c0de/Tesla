@@ -104,20 +104,20 @@ nav > button {
 .visual_img {
   width: 100%;
   height: 450px;
-  background: url(../img/mode33.png) no-repeat center/cover;
+  background: url(../img/mode33.webp) no-repeat center/cover;
 }
 .visual_text_img:nth-of-type(2) .visual_img {
-  background: url(../img/big_car/models.png) no-repeat center/cover;
+  background: url(../img/big_car/models.webp) no-repeat center/cover;
 }
 .visual_text_img:nth-of-type(3) .visual_img {
-  background: url(../img/big_car/Model-X-Main-Hero-Desktop.png) no-repeat
+  background: url(../img/big_car/Model-X-Main-Hero-Desktop.webp) no-repeat
     center/cover;
 }
 .visual_text_img:nth-of-type(4) .visual_img {
-  background: url(../img/big_car/modely.png) no-repeat center/cover;
+  background: url(../img/big_car/modely.webp) no-repeat center/cover;
 }
 .visual_text_img:nth-of-type(5) .visual_img {
-  background: url(../img/big_car/tesla_cybertruck_suv-wallpaper-1920x1080.jpg)
+  background: url(../img/big_car/tesla_cybertruck_suv-wallpaper-1920x1080.webp)
     no-repeat center/cover;
 }
 .visual_text {
@@ -398,7 +398,7 @@ nav > button {
     center/cover;
 }
 .chsun {
-  background: url(../img/About-Us-Power-Solar-Desktop-Global.jpg) no-repeat
+  background: url(../img/About-Us-Power-Solar-Desktop-Global.webp) no-repeat
     center/cover;
 }
 /* .changing_img:nth-child(2),.changing_img:nth-child(3){
@@ -541,19 +541,19 @@ nav > button {
   margin: 0 auto;
   width: 100%;
   height: 400px;
-  background: url(../img/btn/hardware.png) no-repeat center/cover;
+  background: url(../img/btn/hardware.webp) no-repeat center/cover;
 }
 .bot_img {
   background: url(../img/Tesla-Bot-AI.png) no-repeat center/cover;
 }
 .dojo_img {
-  background: url(../img/btn/dojo-chip.png) no-repeat center/cover;
+  background: url(../img/btn/dojo-chip.webp) no-repeat center/cover;
 }
 .study_img {
-  background: url(../img/btn/algorithms.png) no-repeat center/cover;
+  background: url(../img/btn/algorithms.webp) no-repeat center/cover;
 }
 .infra_img {
-  background: url(../img/btn/infrastructure.png) no-repeat center/cover;
+  background: url(../img/btn/infrastructure.webp) no-repeat center/cover;
 }
 .detail_text {
   padding-top: 30px;
